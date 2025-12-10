@@ -83,9 +83,10 @@ export default function Home() {
 
         <div className={`header-bottom ${headerActive ? 'active' : ''}`} data-header style={{ height: '90px', paddingBlock: '5px', maxHeight: '90px' }}>
           <div className="container" style={{ height: '100%', display: 'flex', alignItems: 'center' }}>
-            <a href="#" className="logo" style={{ display: 'block', lineHeight: 0 }}>
+            <a href="#" className="logo" style={{ display: 'flex', alignItems: 'center', gap: '10px', lineHeight: 0 }}>
               <img src="/assets/images/logo.png" alt="ANTONY'S DENTAL HOSPITAL"
-                style={{ height: '75px', width: '300px', maxHeight: '75px', objectFit: 'contain' }} />
+                style={{ height: '75px', width: 'auto', maxHeight: '75px', objectFit: 'contain' }} />
+              <span style={{ fontSize: '24px', fontWeight: '800', color: '#162e5c', lineHeight: '1.2' }}>ANTONY'S DENTAL CARE</span>
             </a>
 
             <nav className={`navbar container ${navActive ? 'active' : ''}`} data-navbar>
