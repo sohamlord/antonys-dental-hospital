@@ -84,7 +84,7 @@ export default function Home() {
         <div className={`header-bottom ${headerActive ? 'active' : ''}`} data-header style={{ height: '90px', paddingBlock: '5px', maxHeight: '90px' }}>
           <div className="container" style={{ height: '100%', display: 'flex', alignItems: 'center' }}>
             <a href="#" className="logo" style={{ display: 'flex', alignItems: 'center', gap: '10px', lineHeight: 0 }}>
-              <img src="/assets/images/logo.png" alt="ANTONY'S DENTAL HOSPITAL"
+              <img src="/assets/images/logo.png" alt="ANTONY'S DENTAL CARE"
                 style={{ height: '75px', width: 'auto', maxHeight: '75px', objectFit: 'contain' }} />
               <span style={{ fontSize: '24px', fontWeight: '800', color: '#162e5c', lineHeight: '1.2' }}>ANTONY'S DENTAL CARE</span>
             </a>
@@ -118,7 +118,7 @@ export default function Home() {
           <section className="section hero" id="home" style={{ backgroundImage: "url('/assets/images/hero-bg.png')" }} aria-label="hero">
             <div className="container">
               <div className="hero-content">
-                <p className="section-subtitle animate-fade-in-up">Welcome To ANTONY'S DENTAL HOSPITAL</p>
+                <p className="section-subtitle animate-fade-in-up">Welcome To ANTONY'S DENTAL CARE</p>
                 <h1 className="h1 hero-title animate-fade-in-up delay-100">We Are Best Dental Service</h1>
                 <p className="hero-text animate-fade-in-up delay-200">
                   We provide top-quality dental services to ensure your smile stays healthy and beautiful. Our expert team is here to give you the best care possible.
@@ -226,7 +226,7 @@ export default function Home() {
                 <p className="section-subtitle">About Us</p>
                 <h2 className="h2 section-title">We Care For Your Dental Health</h2>
                 <p className="section-text section-text-1">
-                  At Antony's Dental Hospital, we are committed to providing exceptional dental care in a comfortable and friendly environment. Our team of experienced dentists utilizes the latest technology to ensure precise and effective treatments.
+                  At Antony's Dental Care, we are committed to providing exceptional dental care in a comfortable and friendly environment. Our team of experienced dentists utilizes the latest technology to ensure precise and effective treatments.
                 </p>
                 <p className="section-text">
                   We believe that a healthy smile is a gateway to overall well-being. From routine check-ups to complex procedures, we are here to support your dental health journey every step of the way.
@@ -401,10 +401,10 @@ export default function Home() {
           <div className="container">
             <div className="footer-brand">
               <a href="#" className="logo">
-                <img src="/assets/images/logo.png" alt="ANTONY'S DENTAL HOSPITAL" width="200" height="50" />
+                <img src="/assets/images/logo.png" alt="ANTONY'S DENTAL CARE" width="200" height="50" />
               </a>
               <p className="footer-text">
-                Antony's Dental Hospital provides comprehensive dental care services. We are dedicated to ensuring the best oral health for all our patients.
+                Antony's Dental Care provides comprehensive dental care services. We are dedicated to ensuring the best oral health for all our patients.
               </p>
               <div className="schedule">
                 <div className="schedule-icon">
@@ -478,30 +478,30 @@ export default function Home() {
           className={`fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 transition-opacity duration-300 ${isModalOpen ? 'opacity-100' : 'opacity-0'}`}
           id="appointment-modal" aria-hidden="true" onClick={(e) => { if (e.target === e.currentTarget) closeModal(); }}>
           <div
-            className={`bg-white rounded-lg shadow-xl w-full max-w-2xl mx-4 transform transition-transform duration-300 relative ${isModalOpen ? 'scale-100' : 'scale-95'}`}>
-            <button className="absolute top-4 right-4 text-gray-500 hover:text-gray-800" data-modal-close onClick={closeModal}>
+            className={`bg-blue-600 rounded-lg shadow-xl w-full max-w-4xl mx-4 transform transition-transform duration-300 relative ${isModalOpen ? 'scale-100' : 'scale-95'}`}>
+            <button className="absolute top-4 right-4 text-white hover:text-gray-200" data-modal-close onClick={closeModal}>
               <ion-icon name="close-outline" size="large"></ion-icon>
             </button>
             <div className="p-10">
-              <h2 className="text-2xl font-bold mb-4 text-center text-blue-600">Book Appointment</h2>
+              <h2 className="text-2xl font-bold mb-4 text-center text-white">Book Appointment</h2>
               <form id="appointment-form" className="space-y-4" onSubmit={handleBooking}>
                 <div>
-                  <label className="block text-sm font-medium text-gray-700">Full Name</label>
+                  <label className="block text-sm font-medium text-white">Full Name</label>
                   <input type="text" required
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50 p-2 border" />
+                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-white focus:ring focus:ring-blue-400 focus:ring-opacity-50 p-2 border" />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-700">Phone Number</label>
+                  <label className="block text-sm font-medium text-white">Phone Number</label>
                   <input type="tel" required
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50 p-2 border" />
+                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-white focus:ring focus:ring-blue-400 focus:ring-opacity-50 p-2 border" />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-700">Preferred Date</label>
+                  <label className="block text-sm font-medium text-white">Preferred Date</label>
                   <input type="date" required
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50 p-2 border" />
+                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-white focus:ring focus:ring-blue-400 focus:ring-opacity-50 p-2 border" />
                 </div>
                 <button type="submit" disabled={isBooking}
-                  className="w-full bg-blue-600 text-white font-bold py-2 px-4 rounded hover:bg-blue-700 transition duration-300 disabled:opacity-50">
+                  className="w-full bg-white text-blue-600 font-bold py-2 px-4 rounded hover:bg-gray-100 transition duration-300 disabled:opacity-50">
                   {isBooking ? 'Booking...' : 'Confirm Booking'}
                 </button>
               </form>
