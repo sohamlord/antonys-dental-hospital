@@ -121,8 +121,7 @@ export default function Home() {
                 <p className="section-subtitle animate-fade-in-up">Welcome To ANTONY'S DENTAL HOSPITAL</p>
                 <h1 className="h1 hero-title animate-fade-in-up delay-100">We Are Best Dental Service</h1>
                 <p className="hero-text animate-fade-in-up delay-200">
-                  Donec vitae libero non enim placerat eleifend aliquam erat volutpat. Curabitur diam ex, dapibus purus sapien, cursus sed
-                  nisl tristique, commodo gravida lectus non.
+                  We provide top-quality dental services to ensure your smile stays healthy and beautiful. Our expert team is here to give you the best care possible.
                 </p>
                 <form action="" className="hero-form">
                   <input type="email" name="email_address" aria-label="email" placeholder="Your Email Address..." required
@@ -149,7 +148,7 @@ export default function Home() {
                     </div>
                     <div>
                       <h3 className="h3 card-title">Root Canal</h3>
-                      <p className="card-text">Aenean eleifend turpis tellus, nec laoreet metus elementum ac.</p>
+                      <p className="card-text">Effective root canal treatments to save your natural teeth.</p>
                     </div>
                   </div>
                 </li>
@@ -160,7 +159,7 @@ export default function Home() {
                     </div>
                     <div>
                       <h3 className="h3 card-title">Alignment Teeth</h3>
-                      <p className="card-text">Aenean eleifend turpis tellus, nec laoreet metus elementum ac.</p>
+                      <p className="card-text">Professional teeth alignment services for a perfect smile.</p>
                     </div>
                   </div>
                 </li>
@@ -171,7 +170,7 @@ export default function Home() {
                     </div>
                     <div>
                       <h3 className="h3 card-title">Cosmetic Teeth</h3>
-                      <p className="card-text">Aenean eleifend turpis tellus, nec laoreet metus elementum ac.</p>
+                      <p className="card-text">Enhance your smile with our advanced cosmetic dentistry.</p>
                     </div>
                   </div>
                 </li>
@@ -187,7 +186,7 @@ export default function Home() {
                     </div>
                     <div>
                       <h3 className="h3 card-title">Oral Hygiene</h3>
-                      <p className="card-text">Aenean eleifend turpis tellus, nec laoreet metus elementum ac.</p>
+                      <p className="card-text">Comprehensive oral hygiene checks for long-lasting health.</p>
                     </div>
                   </div>
                 </li>
@@ -198,7 +197,7 @@ export default function Home() {
                     </div>
                     <div>
                       <h3 className="h3 card-title">Live Advisory</h3>
-                      <p className="card-text">Aenean eleifend turpis tellus, nec laoreet metus elementum ac.</p>
+                      <p className="card-text">Get expert dental advice from our qualified professionals.</p>
                     </div>
                   </div>
                 </li>
@@ -209,7 +208,7 @@ export default function Home() {
                     </div>
                     <div>
                       <h3 className="h3 card-title">Cavity Inspection</h3>
-                      <p className="card-text">Aenean eleifend turpis tellus, nec laoreet metus elementum ac.</p>
+                      <p className="card-text">Thorough inspections to detect and treat cavities early.</p>
                     </div>
                   </div>
                 </li>
@@ -227,12 +226,10 @@ export default function Home() {
                 <p className="section-subtitle">About Us</p>
                 <h2 className="h2 section-title">We Care For Your Dental Health</h2>
                 <p className="section-text section-text-1">
-                  Aliquam ac sem et diam iaculis efficitur. Morbi in enim odio. Nullam quis volutpat est, sed dapibus sapien. Cras
-                  condimentum eu velit id tempor. Curabitur purus sapien, cursus sed nisl tristique, commodo vehicula arcu.
+                  At Antony's Dental Hospital, we are committed to providing exceptional dental care in a comfortable and friendly environment. Our team of experienced dentists utilizes the latest technology to ensure precise and effective treatments.
                 </p>
                 <p className="section-text">
-                  Aliquam erat volutpat. Aliquam enim massa, sagittis blandit ex mattis, ultricies posuere sapien. Morbi a dignissim enim.
-                  Fusce elementum, augue in elementum porta, sapien nunc volutpat ex, a accumsan nunc lectus eu lectus.
+                  We believe that a healthy smile is a gateway to overall well-being. From routine check-ups to complex procedures, we are here to support your dental health journey every step of the way.
                 </p>
                 <a href="#" className="btn">Read more</a>
               </div>
@@ -344,10 +341,10 @@ export default function Home() {
                     </figure>
                     <div className="card-content">
                       <h3 className="h3">
-                        <a href="#" className="card-title">Cras accumsan nulla nec lacus ultricies placerat.</a>
+                        <a href="#" className="card-title">Common Dental Problems and How to Avoid Them</a>
                       </h3>
                       <p className="card-text">
-                        Curabitur sagittis libero tincidunt tempor finibus. Mauris at dignissim ligula, nec tristique orci.
+                        Learn about common dental issues like cavities and gum disease, and discover simple tips to prevent them.
                       </p>
                       <a href="#" className="card-link">Read More</a>
                     </div>
@@ -364,10 +361,10 @@ export default function Home() {
                     </figure>
                     <div className="card-content">
                       <h3 className="h3">
-                        <a href="#" className="card-title">Dras accumsan nulla nec lacus ultricies placerat.</a>
+                        <a href="#" className="card-title">The Importance of Regular Dental Check-ups</a>
                       </h3>
                       <p className="card-text">
-                        Curabitur sagittis libero tincidunt tempor finibus. Mauris at dignissim ligula, nec tristique orci.
+                        Regular visits to the dentist are crucial for maintaining good oral health. Find out why you shouldn't skip your appointments.
                       </p>
                       <a href="#" className="card-link">Read More</a>
                     </div>
@@ -384,10 +381,10 @@ export default function Home() {
                     </figure>
                     <div className="card-content">
                       <h3 className="h3">
-                        <a href="#" className="card-title">Seas accumsan nulla nec lacus ultricies placerat.</a>
+                        <a href="#" className="card-title">Tips for Maintaining a Healthy Smile</a>
                       </h3>
                       <p className="card-text">
-                        Curabitur sagittis libero tincidunt tempor finibus. Mauris at dignissim ligula, nec tristique orci.
+                        Discover expert advice on daily oral hygiene practices that can help you keep your smile bright and healthy.
                       </p>
                       <a href="#" className="card-link">Read More</a>
                     </div>
@@ -407,8 +404,7 @@ export default function Home() {
                 <img src="/assets/images/logo.png" alt="ANTONY'S DENTAL HOSPITAL" width="200" height="50" />
               </a>
               <p className="footer-text">
-                Mauris non nisi semper, lacinia neque in, dapibus leo. Curabitur sagittis libero tincidunt tempor finibus.
-                Mauris at dignissim ligula, nec tristique orci.Quisque vitae metus.
+                Antony's Dental Hospital provides comprehensive dental care services. We are dedicated to ensuring the best oral health for all our patients.
               </p>
               <div className="schedule">
                 <div className="schedule-icon">
@@ -482,11 +478,11 @@ export default function Home() {
           className={`fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 transition-opacity duration-300 ${isModalOpen ? 'opacity-100' : 'opacity-0'}`}
           id="appointment-modal" aria-hidden="true" onClick={(e) => { if (e.target === e.currentTarget) closeModal(); }}>
           <div
-            className={`bg-white rounded-lg shadow-xl w-full max-w-md mx-4 transform transition-transform duration-300 relative ${isModalOpen ? 'scale-100' : 'scale-95'}`}>
+            className={`bg-white rounded-lg shadow-xl w-full max-w-2xl mx-4 transform transition-transform duration-300 relative ${isModalOpen ? 'scale-100' : 'scale-95'}`}>
             <button className="absolute top-4 right-4 text-gray-500 hover:text-gray-800" data-modal-close onClick={closeModal}>
               <ion-icon name="close-outline" size="large"></ion-icon>
             </button>
-            <div className="p-8">
+            <div className="p-10">
               <h2 className="text-2xl font-bold mb-4 text-center text-blue-600">Book Appointment</h2>
               <form id="appointment-form" className="space-y-4" onSubmit={handleBooking}>
                 <div>
