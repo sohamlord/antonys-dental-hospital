@@ -81,12 +81,12 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={`header-bottom ${headerActive ? 'active' : ''}`} data-header style={{ height: '90px', paddingBlock: '5px', maxHeight: '90px' }}>
+        <div className={`header-bottom ${headerActive ? 'active' : ''}`} data-header style={{ height: '65px', paddingBlock: '8px', maxHeight: '65px' }}>
           <div className="container" style={{ height: '100%', display: 'flex', alignItems: 'center' }}>
             <a href="#" className="logo" style={{ display: 'flex', alignItems: 'center', gap: '10px', lineHeight: 0 }}>
               <img src="/assets/images/logo.png" alt="ANTONY'S DENTAL CARE"
-                style={{ height: '75px', width: 'auto', maxHeight: '75px', objectFit: 'contain' }} />
-              <span style={{ fontSize: '24px', fontWeight: '800', color: '#162e5c', lineHeight: '1.2' }}>ANTONY'S DENTAL CARE</span>
+                style={{ height: '48px', width: 'auto', maxHeight: '48px', objectFit: 'contain' }} />
+              <span style={{ fontSize: '18px', fontWeight: '800', color: '#ffffff', lineHeight: '1.2' }}>ANTONY'S DENTAL CARE</span>
             </a>
 
             <nav className={`navbar container ${navActive ? 'active' : ''}`} data-navbar>
@@ -115,7 +115,7 @@ export default function Home() {
       <main>
         <article>
           {/* HERO */}
-          <section className="section hero" id="home" style={{ backgroundImage: "url('/assets/images/hero-bg.png')" }} aria-label="hero">
+          <section className="section hero" id="home" style={{ backgroundImage: "linear-gradient(to bottom, #000000, #1a1a1a)" }} aria-label="hero">
             <div className="container">
               <div className="hero-content">
                 <p className="section-subtitle animate-fade-in-up">Welcome To ANTONY'S DENTAL CARE</p>
@@ -243,67 +243,95 @@ export default function Home() {
               <h2 className="h2 section-title text-center">Best Expert Dentist</h2>
               <ul className="has-scrollbar">
                 <li className="scrollbar-item">
-                  <div className="doctor-card transition-all duration-300 hover:-translate-y-2">
-                    <div className="card-banner img-holder" style={{ '--width': '460', '--height': '500' } as React.CSSProperties}>
-                      <img src="/assets/images/doctor-1.png" width="460" height="500" loading="lazy" alt="Howard Holmes" className="img-cover" />
+                  <div className="doctor-card transition-all duration-300 hover:-translate-y-2 flex flex-row items-center gap-6 text-left">
+                    <div className="card-banner img-holder shrink-0" style={{ '--width': '200', '--height': '220', width: '200px', maxWidth: '200px', margin: '0' } as React.CSSProperties}>
+                      <img src="/assets/images/doctor-1.png" width="200" height="220" loading="lazy" alt="Howard Holmes" className="img-cover" />
                     </div>
-                    <h3 className="h3">
-                      <a href="#" className="card-title">Howard Holmes</a>
-                    </h3>
-                    <p className="card-subtitle">Dentist</p>
-                    <ul className="card-social-list">
-                      <li><a href="#" className="card-social-link"><ion-icon name="logo-facebook"></ion-icon></a></li>
-                      <li><a href="#" className="card-social-link"><ion-icon name="logo-twitter"></ion-icon></a></li>
-                      <li><a href="#" className="card-social-link"><ion-icon name="logo-instagram"></ion-icon></a></li>
-                    </ul>
+                    <div className="flex-1">
+                      <h3 className="h3 text-4xl mb-3">
+                        <a href="#" className="card-title">Howard Holmes</a>
+                      </h3>
+                      <p className="card-subtitle text-2xl mb-5">Dentist</p>
+                      <ul className="list-disc pl-6 text-xl mb-6 space-y-3 text-gray-300">
+                        <li>10+ years of experience</li>
+                        <li>Cosmetic Dentistry Specialist</li>
+                        <li>Member of ADA</li>
+                      </ul>
+                      <ul className="card-social-list" style={{ justifyContent: 'flex-start' }}>
+                        <li><a href="#" className="card-social-link"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                        <li><a href="#" className="card-social-link"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                        <li><a href="#" className="card-social-link"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                      </ul>
+                    </div>
                   </div>
                 </li>
                 <li className="scrollbar-item">
-                  <div className="doctor-card transition-all duration-300 hover:-translate-y-2">
-                    <div className="card-banner img-holder" style={{ '--width': '460', '--height': '500' } as React.CSSProperties}>
-                      <img src="/assets/images/doctor-2.png" width="460" height="500" loading="lazy" alt="Ella Thompson" className="img-cover" />
+                  <div className="doctor-card transition-all duration-300 hover:-translate-y-2 flex flex-row items-center gap-6 text-left">
+                    <div className="card-banner img-holder shrink-0" style={{ '--width': '200', '--height': '220', width: '200px', maxWidth: '200px', margin: '0' } as React.CSSProperties}>
+                      <img src="/assets/images/doctor-2.png" width="200" height="220" loading="lazy" alt="Ella Thompson" className="img-cover" />
                     </div>
-                    <h3 className="h3">
-                      <a href="#" className="card-title">Ella Thompson</a>
-                    </h3>
-                    <p className="card-subtitle">Dentist</p>
-                    <ul className="card-social-list">
-                      <li><a href="#" className="card-social-link"><ion-icon name="logo-facebook"></ion-icon></a></li>
-                      <li><a href="#" className="card-social-link"><ion-icon name="logo-twitter"></ion-icon></a></li>
-                      <li><a href="#" className="card-social-link"><ion-icon name="logo-instagram"></ion-icon></a></li>
-                    </ul>
+                    <div className="flex-1">
+                      <h3 className="h3 text-4xl mb-3">
+                        <a href="#" className="card-title">Ella Thompson</a>
+                      </h3>
+                      <p className="card-subtitle text-2xl mb-5">Dentist</p>
+                      <ul className="list-disc pl-6 text-xl mb-6 space-y-3 text-gray-300">
+                        <li>Pediatric Specialist</li>
+                        <li>Gentle Care Certified</li>
+                        <li>Kids' Favorite</li>
+                      </ul>
+                      <ul className="card-social-list" style={{ justifyContent: 'flex-start' }}>
+                        <li><a href="#" className="card-social-link"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                        <li><a href="#" className="card-social-link"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                        <li><a href="#" className="card-social-link"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                      </ul>
+                    </div>
                   </div>
                 </li>
                 <li className="scrollbar-item">
-                  <div className="doctor-card transition-all duration-300 hover:-translate-y-2">
-                    <div className="card-banner img-holder" style={{ '--width': '460', '--height': '500' } as React.CSSProperties}>
-                      <img src="/assets/images/doctor-3.png" width="460" height="500" loading="lazy" alt="Vincent Cooper" className="img-cover" />
+                  <div className="doctor-card transition-all duration-300 hover:-translate-y-2 flex flex-row items-center gap-6 text-left">
+                    <div className="card-banner img-holder shrink-0" style={{ '--width': '200', '--height': '220', width: '200px', maxWidth: '200px', margin: '0' } as React.CSSProperties}>
+                      <img src="/assets/images/doctor-3.png" width="200" height="220" loading="lazy" alt="Vincent Cooper" className="img-cover" />
                     </div>
-                    <h3 className="h3">
-                      <a href="#" className="card-title">Vincent Cooper</a>
-                    </h3>
-                    <p className="card-subtitle">Dentist</p>
-                    <ul className="card-social-list">
-                      <li><a href="#" className="card-social-link"><ion-icon name="logo-facebook"></ion-icon></a></li>
-                      <li><a href="#" className="card-social-link"><ion-icon name="logo-twitter"></ion-icon></a></li>
-                      <li><a href="#" className="card-social-link"><ion-icon name="logo-instagram"></ion-icon></a></li>
-                    </ul>
+                    <div className="flex-1">
+                      <h3 className="h3 text-4xl mb-3">
+                        <a href="#" className="card-title">Vincent Cooper</a>
+                      </h3>
+                      <p className="card-subtitle text-2xl mb-5">Dentist</p>
+                      <ul className="list-disc pl-6 text-xl mb-6 space-y-3 text-gray-300">
+                        <li>Root Canal Expert</li>
+                        <li>Micro-Endodontics</li>
+                        <li>Pain-free Treatments</li>
+                      </ul>
+                      <ul className="card-social-list" style={{ justifyContent: 'flex-start' }}>
+                        <li><a href="#" className="card-social-link"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                        <li><a href="#" className="card-social-link"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                        <li><a href="#" className="card-social-link"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                      </ul>
+                    </div>
                   </div>
                 </li>
                 <li className="scrollbar-item">
-                  <div className="doctor-card transition-all duration-300 hover:-translate-y-2">
-                    <div className="card-banner img-holder" style={{ '--width': '460', '--height': '500' } as React.CSSProperties}>
-                      <img src="/assets/images/doctor-4.png" width="460" height="500" loading="lazy" alt="Danielle Bryant" className="img-cover" />
+                  <div className="doctor-card transition-all duration-300 hover:-translate-y-2 flex flex-row items-center gap-6 text-left">
+                    <div className="card-banner img-holder shrink-0" style={{ '--width': '200', '--height': '220', width: '200px', maxWidth: '200px', margin: '0' } as React.CSSProperties}>
+                      <img src="/assets/images/doctor-4.png" width="200" height="220" loading="lazy" alt="Danielle Bryant" className="img-cover" />
                     </div>
-                    <h3 className="h3">
-                      <a href="#" className="card-title">Danielle Bryant</a>
-                    </h3>
-                    <p className="card-subtitle">Dentist</p>
-                    <ul className="card-social-list">
-                      <li><a href="#" className="card-social-link"><ion-icon name="logo-facebook"></ion-icon></a></li>
-                      <li><a href="#" className="card-social-link"><ion-icon name="logo-twitter"></ion-icon></a></li>
-                      <li><a href="#" className="card-social-link"><ion-icon name="logo-instagram"></ion-icon></a></li>
-                    </ul>
+                    <div className="flex-1">
+                      <h3 className="h3 text-4xl mb-3">
+                        <a href="#" className="card-title">Danielle Bryant</a>
+                      </h3>
+                      <p className="card-subtitle text-2xl mb-5">Dentist</p>
+                      <ul className="list-disc pl-6 text-xl mb-6 space-y-3 text-gray-300">
+                        <li>Preventative Care</li>
+                        <li>Patient Education</li>
+                        <li>Holistic Approach</li>
+                      </ul>
+                      <ul className="card-social-list" style={{ justifyContent: 'flex-start' }}>
+                        <li><a href="#" className="card-social-link"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                        <li><a href="#" className="card-social-link"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                        <li><a href="#" className="card-social-link"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                      </ul>
+                    </div>
                   </div>
                 </li>
               </ul>
@@ -332,11 +360,11 @@ export default function Home() {
               <ul className="blog-list">
                 <li>
                   <div className="blog-card transition-all duration-300 hover:shadow-xl hover:-translate-y-1 rounded-lg">
-                    <figure className="card-banner img-holder" style={{ '--width': '1180', '--height': '800' } as React.CSSProperties}>
-                      <img src="/assets/images/blog-1.jpg" width="1180" height="800" loading="lazy" alt="Cras accumsan nulla nec lacus ultricies placerat." className="img-cover" />
+                    <figure className="card-banner img-holder" style={{ '--width': '400', '--height': '270', maxWidth: '400px', margin: '0 auto' } as React.CSSProperties}>
+                      <img src="/assets/images/blog-1.jpg" width="400" height="270" loading="lazy" alt="Cras accumsan nulla nec lacus ultricies placerat." className="img-cover" />
                       <div className="card-badge">
                         <ion-icon name="calendar-outline"></ion-icon>
-                        <time className="time" dateTime="2022-03-24">24th March 2022</time>
+                        <time className="time" dateTime="2025-03-24">24th March 2025</time>
                       </div>
                     </figure>
                     <div className="card-content">
@@ -352,11 +380,11 @@ export default function Home() {
                 </li>
                 <li>
                   <div className="blog-card transition-all duration-300 hover:shadow-xl hover:-translate-y-1 rounded-lg">
-                    <figure className="card-banner img-holder" style={{ '--width': '1180', '--height': '800' } as React.CSSProperties}>
-                      <img src="/assets/images/blog-2.jpg" width="1180" height="800" loading="lazy" alt="Dras accumsan nulla nec lacus ultricies placerat." className="img-cover" />
+                    <figure className="card-banner img-holder" style={{ '--width': '400', '--height': '270', maxWidth: '400px', margin: '0 auto' } as React.CSSProperties}>
+                      <img src="/assets/images/blog-2.jpg" width="400" height="270" loading="lazy" alt="Dras accumsan nulla nec lacus ultricies placerat." className="img-cover" />
                       <div className="card-badge">
                         <ion-icon name="calendar-outline"></ion-icon>
-                        <time className="time" dateTime="2022-03-24">24th March 2022</time>
+                        <time className="time" dateTime="2025-03-24">24th March 2025</time>
                       </div>
                     </figure>
                     <div className="card-content">
@@ -372,11 +400,11 @@ export default function Home() {
                 </li>
                 <li>
                   <div className="blog-card transition-all duration-300 hover:shadow-xl hover:-translate-y-1 rounded-lg">
-                    <figure className="card-banner img-holder" style={{ '--width': '1180', '--height': '800' } as React.CSSProperties}>
-                      <img src="/assets/images/blog-3.jpg" width="1180" height="800" loading="lazy" alt="Seas accumsan nulla nec lacus ultricies placerat." className="img-cover" />
+                    <figure className="card-banner img-holder" style={{ '--width': '400', '--height': '270', maxWidth: '400px', margin: '0 auto' } as React.CSSProperties}>
+                      <img src="/assets/images/blog-3.jpg" width="400" height="270" loading="lazy" alt="Seas accumsan nulla nec lacus ultricies placerat." className="img-cover" />
                       <div className="card-badge">
                         <ion-icon name="calendar-outline"></ion-icon>
-                        <time className="time" dateTime="2022-03-24">24th March 2022</time>
+                        <time className="time" dateTime="2025-03-24">24th March 2025</time>
                       </div>
                     </figure>
                     <div className="card-content">
@@ -457,7 +485,7 @@ export default function Home() {
 
         <div className="footer-bottom">
           <div className="container">
-            <p className="copyright">&copy; 2022 All Rights Reserved by codewithsadee.</p>
+            <p className="copyright">&copy; 2025 All Rights Reserved by codewithsadee.</p>
             <ul className="social-list">
               <li><a href="#" className="social-link"><ion-icon name="logo-facebook"></ion-icon></a></li>
               <li><a href="#" className="social-link"><ion-icon name="logo-instagram"></ion-icon></a></li>
@@ -475,35 +503,106 @@ export default function Home() {
       {/* MODAL */}
       {isModalOpen && (
         <div
-          className={`fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 transition-opacity duration-300 ${isModalOpen ? 'opacity-100' : 'opacity-0'}`}
-          id="appointment-modal" aria-hidden="true" onClick={(e) => { if (e.target === e.currentTarget) closeModal(); }}>
-          <div
-            className={`bg-blue-600 rounded-lg shadow-xl w-full max-w-4xl mx-4 transform transition-transform duration-300 relative ${isModalOpen ? 'scale-100' : 'scale-95'}`}>
-            <button className="absolute top-4 right-4 text-white hover:text-gray-200" data-modal-close onClick={closeModal}>
-              <ion-icon name="close-outline" size="large"></ion-icon>
-            </button>
-            <div className="p-10">
-              <h2 className="text-2xl font-bold mb-4 text-center text-white">Book Appointment</h2>
-              <form id="appointment-form" className="space-y-4" onSubmit={handleBooking}>
-                <div>
-                  <label className="block text-sm font-medium text-white">Full Name</label>
-                  <input type="text" required
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-white focus:ring focus:ring-blue-400 focus:ring-opacity-50 p-2 border" />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-white">Phone Number</label>
-                  <input type="tel" required
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-white focus:ring focus:ring-blue-400 focus:ring-opacity-50 p-2 border" />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-white">Preferred Date</label>
-                  <input type="date" required
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-white focus:ring focus:ring-blue-400 focus:ring-opacity-50 p-2 border" />
-                </div>
-                <button type="submit" disabled={isBooking}
-                  className="w-full bg-white text-blue-600 font-bold py-2 px-4 rounded hover:bg-gray-100 transition duration-300 disabled:opacity-50">
-                  {isBooking ? 'Booking...' : 'Confirm Booking'}
+          className="fixed inset-0 z-[9999] overflow-y-auto"
+          aria-labelledby="modal-title"
+          role="dialog"
+          aria-modal="true"
+        >
+          {/* Background backdrop */}
+          <div className="fixed inset-0 bg-black/90 transition-opacity" aria-hidden="true" onClick={closeModal}></div>
+
+          <div className="flex min-h-full items-center justify-center p-4 text-center">
+            {/* Modal panel with RGB BORDER */}
+            <div
+              className="relative transform overflow-hidden rounded-xl bg-[#1a1a1a] text-left shadow-2xl transition-all sm:my-8 sm:w-full sm:max-w-4xl"
+              style={{
+                border: '5px solid transparent',
+                backgroundImage: 'linear-gradient(#1a1a1a, #1a1a1a), linear-gradient(90deg, #9b5de5, #f15bb5, #fee440, #00bbf9, #00f5d4, #9b5de5)',
+                backgroundOrigin: 'border-box',
+                backgroundClip: 'padding-box, border-box',
+                backgroundSize: '100% 100%, 200% 100%',
+                animation: 'rgb-border 2s linear infinite'
+              }}
+            >
+
+              {/* Header */}
+              <div className="bg-[#2a1b3d] px-6 py-4 flex justify-between items-center border-b border-gray-700">
+                <h3 className="text-2xl font-extrabold leading-6 text-white tracking-wide" id="modal-title">Book Your Appointment</h3>
+                <button onClick={closeModal} className="text-white hover:text-gray-300 focus:outline-none bg-white/10 p-2 rounded-full hover:bg-white/20 transition-colors">
+                  <ion-icon name="close" style={{ fontSize: '32px' }}></ion-icon>
                 </button>
+              </div>
+
+              {/* Form Content */}
+              <form onSubmit={handleBooking}>
+                <div className="bg-[#1a1a1a] px-8 pb-8 pt-6">
+                  <div className="space-y-6">
+                    <div className="bg-[#2d2d2d] p-4 rounded-lg border-l-4 border-purple-500">
+                      <p className="text-lg text-gray-200 font-medium">Please fill out the form below. We'll confirm your visit instantly!</p>
+                    </div>
+
+                    <div>
+                      <label htmlFor="full-name" className="block text-xl font-bold text-gray-200 mb-2">Full Name</label>
+                      <div className="mt-1">
+                        <input
+                          type="text"
+                          name="full-name"
+                          id="full-name"
+                          required
+                          className="block w-full rounded-lg border-2 border-gray-700 bg-[#2d2d2d] px-4 py-3 text-white shadow-sm focus:border-purple-500 focus:ring-purple-500 text-lg placeholder-gray-500"
+                          placeholder="John Doe"
+                        />
+                      </div>
+                    </div>
+
+                    <div>
+                      <label htmlFor="phone" className="block text-xl font-bold text-gray-200 mb-2">Phone Number</label>
+                      <div className="mt-1">
+                        <input
+                          type="tel"
+                          name="phone"
+                          id="phone"
+                          required
+                          className="block w-full rounded-lg border-2 border-gray-700 bg-[#2d2d2d] px-4 py-3 text-white shadow-sm focus:border-purple-500 focus:ring-purple-500 text-lg placeholder-gray-500"
+                          placeholder="+1 (555) 123-4567"
+                        />
+                      </div>
+                    </div>
+
+                    <div>
+                      <label htmlFor="date" className="block text-xl font-bold text-gray-200 mb-2">Preferred Date</label>
+                      <div className="mt-1">
+                        <input
+                          type="date"
+                          name="date"
+                          id="date"
+                          required
+                          className="block w-full rounded-lg border-2 border-gray-700 bg-[#2d2d2d] px-4 py-3 text-white shadow-sm focus:border-purple-500 focus:ring-purple-500 text-lg section-text"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Footer Buttons */}
+                <div className="bg-[#111111] px-8 py-6 sm:flex sm:flex-row-reverse gap-4 border-t border-gray-800">
+                  <button
+                    type="submit"
+                    disabled={isBooking}
+                    className="inline-flex w-full justify-center rounded-lg bg-purple-600 px-6 py-4 text-lg font-bold text-white shadow-lg hover:bg-purple-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600 sm:w-auto transition-transform hover:scale-105"
+                    style={{ backgroundColor: '#9b5de5', color: '#ffffff', border: 'none' }}
+                  >
+                    {isBooking ? 'Processing...' : 'CONFIRM BOOKING'}
+                  </button>
+                  <button
+                    type="button"
+                    className="mt-4 inline-flex w-full justify-center rounded-lg bg-transparent px-6 py-4 text-lg font-bold text-white shadow-sm ring-1 ring-inset ring-gray-600 hover:bg-white/10 sm:mt-0 sm:w-auto transition-colors"
+                    onClick={closeModal}
+                    style={{ backgroundColor: 'transparent', color: '#ffffff', border: '1px solid #4b5563' }}
+                  >
+                    Cancel
+                  </button>
+                </div>
               </form>
             </div>
           </div>
